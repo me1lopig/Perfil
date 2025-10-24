@@ -7,7 +7,7 @@ st.set_page_config(page_title="Perfil Topográfico", layout="centered")
 
 st.title("📊 Generador de Perfiles Topográficos")
 
-st.write("Introduce los puntos del perfil. La distancia es horizontal y la altura es la elevación.")
+st.write("Introduce los puntos del perfil. La distancia es acumulativa.")
 
 # Datos iniciales con ejemplo
 data = pd.DataFrame({
@@ -37,7 +37,7 @@ if not data_editable.empty:
         buffer.seek(0)
         
         st.download_button(
-            label="📥 Descargar perfil en Excel (.xlsx)",
+            label="📥 Descargar perfil(.xlsx)",
             data=buffer,
             file_name="perfil_topografico.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
