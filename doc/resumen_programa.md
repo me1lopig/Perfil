@@ -52,7 +52,7 @@ Este programa es útil para:
 
 Imagina que mides la altura de una montaña en diferentes puntos:
 
-| Tipo        | Distancia (km) | Altura (m) |
+| Tipo        | Distancia (m) | Altura (m) |
 |-------------|----------------|------------|
 | Base        | 0              | 100        |
 | Punto medio | 5              | 450        |
@@ -83,7 +83,7 @@ pip install streamlit pandas altair openpyxl
 ## Ejecución
 
 ```bash
-streamlit run app_actualizada.py
+streamlit run app.py
 ```
 
 La aplicación se abrirá en tu navegador en `http://localhost:8501`
